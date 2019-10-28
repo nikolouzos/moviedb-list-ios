@@ -66,15 +66,47 @@
 		0E0FBC4E23677FF500E702DD /* Farmdrop Test */ = {
 			isa = PBXGroup;
 			children = (
+				0E0FBC5D23677FF700E702DD /* Info.plist */,
 				0E0FBC4F23677FF500E702DD /* AppDelegate.swift */,
 				0E0FBC5123677FF500E702DD /* SceneDelegate.swift */,
-				0E0FBC5323677FF500E702DD /* ViewController.swift */,
-				0E0FBC5523677FF500E702DD /* Main.storyboard */,
 				0E0FBC5823677FF700E702DD /* Assets.xcassets */,
 				0E0FBC5A23677FF700E702DD /* LaunchScreen.storyboard */,
-				0E0FBC5D23677FF700E702DD /* Info.plist */,
+				0E0FBC682367880800E702DD /* Models */,
+				0E0FBC692367881000E702DD /* Views */,
+				0E0FBC6A2367881600E702DD /* Controllers */,
 			);
 			path = "Farmdrop Test";
+			sourceTree = "<group>";
+		};
+		0E0FBC682367880800E702DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E0FBC692367881000E702DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FBC6B2367882600E702DD /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E0FBC6A2367881600E702DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FBC5323677FF500E702DD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E0FBC6B2367882600E702DD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FBC5523677FF500E702DD /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		624C4318B066F2D5CB750C21 /* Pods */ = {
