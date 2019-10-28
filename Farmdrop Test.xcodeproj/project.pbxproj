@@ -13,6 +13,8 @@
 		0E0FBC5723677FF500E702DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FBC5523677FF500E702DD /* Main.storyboard */; };
 		0E0FBC5923677FF700E702DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FBC5823677FF700E702DD /* Assets.xcassets */; };
 		0E0FBC5C23677FF700E702DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FBC5A23677FF700E702DD /* LaunchScreen.storyboard */; };
+		0E0FBC67236786E500E702DD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FBC66236786E500E702DD /* .swiftlint.yml */; };
+		2B19626C5493007EC1883080 /* Pods_Farmdrop_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97FB458238D4D433161723B /* Pods_Farmdrop_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0E0FBC5823677FF700E702DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E0FBC5B23677FF700E702DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E0FBC5D23677FF700E702DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E0FBC66236786E500E702DD /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		470C9A3A8CEC06115C1638AB /* Pods-Farmdrop Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farmdrop Test.release.xcconfig"; path = "Target Support Files/Pods-Farmdrop Test/Pods-Farmdrop Test.release.xcconfig"; sourceTree = "<group>"; };
+		A97FB458238D4D433161723B /* Pods_Farmdrop_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farmdrop_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE91C1D3C0478742D691CFD4 /* Pods-Farmdrop Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farmdrop Test.debug.xcconfig"; path = "Target Support Files/Pods-Farmdrop Test/Pods-Farmdrop Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B19626C5493007EC1883080 /* Pods_Farmdrop_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,11 @@
 		0E0FBC4323677FF500E702DD = {
 			isa = PBXGroup;
 			children = (
+				0E0FBC66236786E500E702DD /* .swiftlint.yml */,
 				0E0FBC4E23677FF500E702DD /* Farmdrop Test */,
 				0E0FBC4D23677FF500E702DD /* Products */,
+				624C4318B066F2D5CB750C21 /* Pods */,
+				C37576B24CEEA2F62110F494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +77,23 @@
 			path = "Farmdrop Test";
 			sourceTree = "<group>";
 		};
+		624C4318B066F2D5CB750C21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE91C1D3C0478742D691CFD4 /* Pods-Farmdrop Test.debug.xcconfig */,
+				470C9A3A8CEC06115C1638AB /* Pods-Farmdrop Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C37576B24CEEA2F62110F494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A97FB458238D4D433161723B /* Pods_Farmdrop_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E0FBC6023677FF700E702DD /* Build configuration list for PBXNativeTarget "Farmdrop Test" */;
 			buildPhases = (
+				7C655588AE3C6DE9883B9683 /* [CP] Check Pods Manifest.lock */,
 				0E0FBC4823677FF500E702DD /* Sources */,
 				0E0FBC4923677FF500E702DD /* Frameworks */,
 				0E0FBC4A23677FF500E702DD /* Resources */,
+				0E0FBC632367841D00E702DD /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0FBC67236786E500E702DD /* .swiftlint.yml in Resources */,
 				0E0FBC5C23677FF700E702DD /* LaunchScreen.storyboard in Resources */,
 				0E0FBC5923677FF700E702DD /* Assets.xcassets in Resources */,
 				0E0FBC5723677FF500E702DD /* Main.storyboard in Resources */,
@@ -132,6 +162,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E0FBC632367841D00E702DD /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		7C655588AE3C6DE9883B9683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farmdrop Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E0FBC4823677FF500E702DD /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		0E0FBC6123677FF700E702DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE91C1D3C0478742D691CFD4 /* Pods-Farmdrop Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		0E0FBC6223677FF700E702DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470C9A3A8CEC06115C1638AB /* Pods-Farmdrop Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
