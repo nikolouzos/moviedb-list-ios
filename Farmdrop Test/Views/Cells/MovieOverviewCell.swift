@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class MovieOverviewCell: UITableViewCell {
+class MovieOverviewCell: UITableViewCell, LoadableImage {
 	@IBOutlet weak var posterImageView: UIImageView!
 	@IBOutlet weak var movieTitle: UILabel!
 	@IBOutlet weak var movieOverview: UILabel!
@@ -19,6 +20,7 @@ class MovieOverviewCell: UITableViewCell {
 		movieTitle.text = movie.title
 		movieOverview.text = movie.overview
 
-		// TODO: Load in the image from the image path
+		// Load in the image from the image path
+		loadPoster(from: movie, in: posterImageView)
 	}
 }

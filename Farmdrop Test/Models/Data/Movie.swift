@@ -17,8 +17,14 @@ struct Movie: Codable {
 	var title: String
 	var overview: String
 
-	var posterPath: String?
+	private var posterPath: String?
 
 	var voteAverage: Double
 	var releaseDate: String
+
+	var posterUrl: URL? {
+		guard let posterPath = posterPath else { return nil }
+
+		return URL(string: Network.Endpoints.moviePoster.rawValue + posterPath)
+	}
 }
