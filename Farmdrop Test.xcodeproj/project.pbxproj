@@ -18,6 +18,7 @@
 		0E3E66C723681B12005BC074 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E66C623681B12005BC074 /* NetworkError.swift */; };
 		0E3E66C923681B90005BC074 /* TopMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E66C823681B90005BC074 /* TopMovies.swift */; };
 		0E3E66CA23681FF8005BC074 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FBC6C2368154200E702DD /* Network.swift */; };
+		0E3E66CD23683138005BC074 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E66CC23683138005BC074 /* MovieOverviewCell.swift */; };
 		2B19626C5493007EC1883080 /* Pods_Farmdrop_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97FB458238D4D433161723B /* Pods_Farmdrop_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		0E3E66C323681A16005BC074 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0E3E66C623681B12005BC074 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0E3E66C823681B90005BC074 /* TopMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMovies.swift; sourceTree = "<group>"; };
+		0E3E66CC23683138005BC074 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
 		470C9A3A8CEC06115C1638AB /* Pods-Farmdrop Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farmdrop Test.release.xcconfig"; path = "Target Support Files/Pods-Farmdrop Test/Pods-Farmdrop Test.release.xcconfig"; sourceTree = "<group>"; };
 		A97FB458238D4D433161723B /* Pods_Farmdrop_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farmdrop_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE91C1D3C0478742D691CFD4 /* Pods-Farmdrop Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farmdrop Test.debug.xcconfig"; path = "Target Support Files/Pods-Farmdrop Test/Pods-Farmdrop Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		0E0FBC692367881000E702DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E3E66CB23683119005BC074 /* Cells */,
 				0E0FBC6B2367882600E702DD /* Storyboards */,
 			);
 			path = Views;
@@ -135,6 +138,14 @@
 				0E3E66C623681B12005BC074 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0E3E66CB23683119005BC074 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0E3E66CC23683138005BC074 /* MovieOverviewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		624C4318B066F2D5CB750C21 /* Pods */ = {
@@ -290,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E0FBC5423677FF500E702DD /* TopMoviesViewController.swift in Sources */,
+				0E3E66CD23683138005BC074 /* MovieOverviewCell.swift in Sources */,
 				0E0FBC5023677FF500E702DD /* AppDelegate.swift in Sources */,
 				0E3E66C923681B90005BC074 /* TopMovies.swift in Sources */,
 				0E3E66C723681B12005BC074 /* NetworkError.swift in Sources */,
